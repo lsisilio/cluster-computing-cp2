@@ -8,7 +8,7 @@ def eh_primo(numero):
 
 def main():
   numero = 2
-  while True:
+  while numero <= 1000:
     if eh_primo(numero):
       print(numero)
     numero += 1
