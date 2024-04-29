@@ -1,6 +1,6 @@
 FROM python:3.8
 
-WORKDIR /cluster-computing-cp2/prime_number_generator
+WORKDIR /app
 
 COPY main.py .
 
