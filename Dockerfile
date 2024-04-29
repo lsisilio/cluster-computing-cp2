@@ -1,10 +1,7 @@
-FROM ubuntu:latest
+FROM python:3.8
 
-RUN apt update -y
-RUN apt install python3 -y
+WORKDIR /cluster-computing-cp2/prime_number_generator
 
-WORKDIR /usr/app/prime_number_generator
+COPY main.py .
 
-COPY ./app/main.py .
-
-CMD ["python3", "./main.py"]
+CMD ["python", "main.py"]
