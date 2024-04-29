@@ -1,7 +1,0 @@
-version: '3.9'
-services:
-  app:
-    ports:
-      - "80:80"
-    volumes:
-    - .:/prime_number_generator

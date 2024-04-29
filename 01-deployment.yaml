@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prime-numbers-generator-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: prime-numbers-generator
+  template:
+    metadata:
+      labels:
+        app: prime-numbers-generator
+    spec:
+      containers:
+      - name: prime-numbers-generator
+        image: localhost:32000/primenum:v1
+        ports:
+        - containerPort: 80
